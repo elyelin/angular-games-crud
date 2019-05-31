@@ -3,13 +3,15 @@
         <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
             {{game.title}}
             <button class="btn btn-danger" (click)="deleteGame(game.id)">
-        <i class="far fa-trash-alt"></i>
-      </button>
+                <!-- <button type="button" class="btn btn-primary btn-lg">Large button</button> -->
+            <i class="far fa-trash-alt"></i>
+            </button>
         </div>
         <img [src]="game.image" class="card-img-top">
         <div class="card-body">
             <p>{{game.description}}</p>
-            <a [routerLink]="['/games/edit', game.id]" class="btn btn-info btn-block">
+            <!-- <button type="button" class="btn btn-warning">Warning</button> -->
+            <a [routerLink]="['/games/edit', game.id]" class="btn btn-primary btn-block">
           EDIT GAME
         </a>
         </div>
